@@ -8,7 +8,7 @@ app.use(express.json());
 const apiEndpoint = '/trpc';
 
 app.listen(3000, () => {
-    console.log("Server runing...");
+    console.log("Server running...");
 });
 
 app.use(apiEndpoint, trpcExpress.createExpressMiddleware({
